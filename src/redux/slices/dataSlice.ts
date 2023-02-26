@@ -25,7 +25,7 @@ interface DataSliceState {
 }
 
 export const fetchData = createAsyncThunk('data/fetchData', async () => {
-  const { data } = await axios.get('http://localhost:3000/db.json');
+  const { data } = await axios.get('https://63face632027a45d8d5be7d4.mockapi.io/data');
   return data;
 });
 
